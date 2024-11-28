@@ -1,5 +1,5 @@
-import React from "react";
-import TodoUserListPage from "../components/pages/TodoUserListPage";
+import React from 'react';
+import TodoUserListPage from 'components/features/todo/Index';
 
 interface Props {}
 
