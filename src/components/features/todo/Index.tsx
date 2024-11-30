@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import InputForm from './InputForm';
 import ListBoxForm from './ListBoxForm';
 
-const TodoList = () => {
+const Index = () => {
   return (
     <S.Wrapper>
       <S.Title>To Do List</S.Title>
@@ -26,4 +26,4 @@ const S = {
   `
 };
 
-export default TodoList;
+export default Index;

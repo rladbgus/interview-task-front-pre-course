@@ -2,18 +2,37 @@ import styled from '@emotion/styled';
 import React, { useState } from 'react';
 import * as M from '../../../../message.json';
 import useTodoListStore from 'store/todoList';
+import { alertInfo } from 'src/shared/Alert';
 
 /**
- * 투 두 리스트 입력 폼 컴퍼넌트
+ * 할 일 입력 폼 컴퍼넌트
  */
 const InputForm = () => {
-  const { setTodoList } = useTodoListStore();
+  const { todoList, setTodoList } = useTodoListStore();
   const [inputTask, setInputTask] = useState('');
 
+  // 20글자 제한
+  const onChangeTask = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = e.target;
+    if (value.length <= 20) {
+      setInputTask(value);
+    }
+  };
+
   // enter시 입력한 내용 store에 저장
-  const onSearch = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const onSaveTask = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const notCompletedCount = todoList.filter((li) => !li.isCompleted).length;
+    if (notCompletedCount >= 10) {
+      alertInfo(M.todo.noticeNotCompleted);
+      return;
+    }
+
     if (e.key === 'Enter') {
-      setTodoList({ id: Date.now(), isCompleted: false, task: inputTask });
+      setTodoList({
+        id: Date.now(),
+        isCompleted: false,
+        task: inputTask
+      });
       setInputTask('');
     }
   };
@@ -24,8 +43,8 @@ const InputForm = () => {
         placeholder={M.todo.inputPlaceholder}
         type="text"
         value={inputTask}
-        onKeyPress={onSearch}
-        onChange={(e) => setInputTask(e.target.value)}
+        onKeyPress={onSaveTask}
+        onChange={onChangeTask}
       />
     </S.Wrapper>
   );

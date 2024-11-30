@@ -1,5 +1,6 @@
 {
   "todo": {
-    "inputPlaceholder": "할 일을 입력해주세요"
+    "inputPlaceholder": "할 일을 입력해주세요",
+    "noticeNotCompleted": "처리가 안된 할 일은 10개를 넘을 수 없습니다."
   }
 }

@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
 import React, { useEffect, useState } from 'react';
 import List from './List';
-import StatusToggle from './Toggle';
+import StatusToggle from './StatusToggle';
 import useTodoListStore from 'src/store/todoList';
 
+/**
+ * 할 일 목록 상위 컴퍼넌트
+ */
 const ListBoxForm = () => {
   const { todoStatus, todoList } = useTodoListStore();
   const [totalCount, setTotalCount] = useState(todoList.length);

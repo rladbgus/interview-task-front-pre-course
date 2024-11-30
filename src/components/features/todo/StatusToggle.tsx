@@ -3,6 +3,9 @@ import Toggle from 'components/ui/Toggle';
 import { STATUS } from '../../../constants/toggleOptions';
 import useTodoListStore from 'store/todoList';
 
+/**
+ * 할 일 상태 토글 컴퍼넌트
+ */
 const StatusToggle = () => {
   const { setTodoStatus } = useTodoListStore();
   const [selectedStatus, setSelectedStatus] = useState('all');

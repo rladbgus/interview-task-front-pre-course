@@ -5,7 +5,7 @@ import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
 import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
 
 /**
- * 투 두 리스트 목록 컴퍼넌트
+ * 할 일 목록 컴퍼넌트
  */
 const List = () => {
   const { todoStatus, todoList, removeTodo, toggleTodoCompleted } = useTodoListStore();
