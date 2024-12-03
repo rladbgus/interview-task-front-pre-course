@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import InputForm from 'components/features/todo/InputForm';
-import useTodoListStore from 'src/store/todoList';
-import { alertInfo } from 'src/shared/Alert';
-import * as M from 'message.json';
+import InputForm from '../../src/components/features/todo/InputForm';
+import useTodoListStore from '../../src/store/todoList';
+import { alertInfo } from '../../src/shared/Alert';
+import * as M from '../../message.json';
 
 jest.mock('../../src/store/todoList.ts', () => ({
   __esModule: true,

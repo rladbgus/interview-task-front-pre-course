@@ -5,10 +5,7 @@ const nextJest = require('next/jest');
 const createJestConfig = nextJest({
   // next.config.js 및 .env 파일을 로드할 Next.js 앱의 경로
   dir: './',
-  moduleNameMapper: {
-    '^src/(.*)$': '<rootDir>/src/$1'
-  },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts']
+  setupFilesAfterEnv: ['./jest.setup.ts']
 });
 
 const customJestConfig: Config = {

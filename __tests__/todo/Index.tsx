@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Index from 'components/features/todo/Index';
+import Index from '../../src/components/features/todo/Index';
 
 it('최상위 컴퍼넌트 스냅샵 테스트', () => {
   const { asFragment } = render(<Index />);

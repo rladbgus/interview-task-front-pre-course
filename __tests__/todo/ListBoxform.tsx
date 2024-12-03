@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import ListBoxForm from 'components/features/todo/ListBoxForm';
-import useTodoListStore from 'src/store/todoList';
+import ListBoxForm from '../../src/components/features/todo/ListBoxForm';
+import useTodoListStore from '../../src/store/todoList';
 
 jest.mock('../../src/store/todoList.ts', () => ({
   __esModule: true,
