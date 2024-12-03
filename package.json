@@ -6,7 +6,7 @@
     "dev": "next dev -p 3000",
     "build": "yarn test && next build",
     "start": "next start",
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "@emotion/core": "^11.0.0",
@@ -18,13 +18,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "recoil": "^0.7.7",
-    "sweetalert2": "^11.14.5",
+    "sweetalert2": "^11.6.13",
     "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.3",
     "@types/react": "^18.0.27",

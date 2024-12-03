@@ -19,14 +19,15 @@ const InputForm = () => {
     }
   };
 
-  // enter시 입력한 내용 store에 저장
   const onSaveTask = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    // 처리가 안된 할 일 갯수 제한
     const notCompletedCount = todoList.filter((li) => !li.isCompleted).length;
     if (notCompletedCount >= 10) {
       alertInfo(M.todo.noticeNotCompleted);
       return;
     }
 
+    // enter시 입력한 내용 store에 저장
     if (e.key === 'Enter') {
       setTodoList({
         id: Date.now(),

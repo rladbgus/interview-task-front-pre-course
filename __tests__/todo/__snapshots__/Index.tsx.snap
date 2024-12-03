@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-ogq495"
+  >
+    <div
+      class="css-1byphj3"
+    >
+      To Do List
+    </div>
+    <div
+      class="css-jqim4p"
+    >
+      <input
+        class="css-1vuil63"
+        placeholder="할 일을 입력해주세요"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="css-136cwgt"
+    >
+      <div
+        class="css-t1g06b"
+      >
+        <button
+          class="css-1pooxy9"
+        >
+          All
+        </button>
+        <button
+          class="css-1rrcqoz"
+        >
+          Todo
+        </button>
+        <button
+          class="css-1rrcqoz"
+        >
+          Done
+        </button>
+      </div>
+      <div
+        class="css-ncewfj"
+      >
+         총 0개
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`최상위 컴퍼넌트 스냅샵 테스트 1`] = `
+<DocumentFragment>
+  <div
+    class="css-ogq495"
+  >
+    <div
+      class="css-1byphj3"
+    >
+      To Do List
+    </div>
+    <div
+      class="css-jqim4p"
+    >
+      <input
+        class="css-1vuil63"
+        placeholder="할 일을 입력해주세요"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="css-136cwgt"
+    >
+      <div
+        class="css-t1g06b"
+      >
+        <button
+          class="css-1pooxy9"
+        >
+          All
+        </button>
+        <button
+          class="css-1rrcqoz"
+        >
+          Todo
+        </button>
+        <button
+          class="css-1rrcqoz"
+        >
+          Done
+        </button>
+      </div>
+      <div
+        class="css-ncewfj"
+      >
+         총 0개
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
